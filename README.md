@@ -1,90 +1,20 @@
-import 'package:flutter/material.dart';
+<<<<<<< HEAD
+# refactor_methods
+=======
+# firsr_project
 
-void main() {
-  runApp(const MyApp());
-}
+A new Flutter project.
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+## Getting Started
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(title: 'Flutter Counter App'),
-    );
-  }
-}
+This project is a starting point for a Flutter application.
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+A few resources to get you started if this is your first Flutter project:
 
-  final String title;
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  void _decrementCounter() {
-    setState(() {
-      _counter--;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'Counter Value:',
-              style: TextStyle(fontSize: 20),
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton:
-      buildRow(),
-    );
-  }
-
-  Row buildRow() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        FloatingActionButton(
-          onPressed: _incrementCounter,
-          tooltip: 'Increment',
-          child: const Icon(Icons.add),
-        ),
-        FloatingActionButton(
-          onPressed: _decrementCounter,
-          tooltip: 'Decrement',
-          child: const Icon(Icons.remove),
-        ),
-      ],
-    );
-  }
-}
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
+>>>>>>> 10a70ec (refactor_methods)
